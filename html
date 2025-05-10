@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
@@ -7,10 +8,17 @@
     <title>Idk</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
     <div class="relogio" id="relogio">
-    00:00:00
+        00:00:00
     </div>
+    <section>
+        <h1>Temporizador</h1>
+        <input type="date" id="dataSelecionada">
+        <button onclick="iniciarContagem()">Iniciar Temporizador</button>
+        <div id="Temporizador" class="Temporizador">00d 00h 00m 00s</div>
+    </section>
     <script src="script.js"></script>
 </body>
 
