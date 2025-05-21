@@ -1,35 +1,22 @@
 body {
     text-align: center;
-    padding: 40px;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-body.claro {
+    padding: 40px 20px;
     background-color: #ffffff;
-    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background-color 0.3s ease;
 }
 
-body.escuro {
-    background-color: #535252;
-    color: #ffffff;
-}
-
-.titulo {
-    color: yellow;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px #000000;
-}
-
+/* Relógio */
 .relogio {
-    font-size: 48px;
+    font-size: 36px;
     border: 5px solid rgb(255, 0, 0);
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
-    margin-bottom: 30px;
-    width: 250px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
     font-family: monospace;
-    margin: 0 auto;
     background-color: #ffe5e5;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
     color: rgb(255, 0, 0);
@@ -37,21 +24,41 @@ body.escuro {
     padding: 15px 0;
 }
 
-input {
-    height: 35px;
+/* Temporizador */
+#Temporizador {
+    font-size: 1.4rem;
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #333333;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+input[type="date"] {
+    height: 40px;
     border-radius: 20px;
-    padding: 1rem 4rem;
-    font-size: 2rem;
+    padding: 0 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 90%;
+    width: 250px;
 }
 
 button {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     border-radius: 20px;
-    padding: 0.5rem 2rem;
+    padding: 0.6rem 1.5rem;
     background-color: #ffcccc;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
+    max-width: 90%;
 }
 
 button:hover {
@@ -59,36 +66,77 @@ button:hover {
 }
 
 section {
-    margin-top: 50px;
-}
-
-#Temporizador {
-    font-size: 2rem;
-    color: #ffcc00;
-    font-weight: bold;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    padding: 15px 0;
-    width: 300px;
-    margin: 0 auto;
-    background-color: #333333;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    margin-top: 40px;
 }
 
 h1 {
     color: #ffcc00;
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
 }
 
-.tema-botao {
+/* Botão de Tema */
+#botaoTema {
     position: fixed;
     top: 20px;
     right: 20px;
-    font-size: 2rem;
-    background-color: transparent;
+    background-color: #ffcc00;
     border: none;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    z-index: 999;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+#botaoTema:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Tema Claro */
+.claro {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.claro .relogio {
+    background-color: #fff3f3;
+    color: red;
+}
+
+.claro #Temporizador {
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+.claro #botaoTema {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Tema Escuro */
+.escuro {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.escuro .relogio {
+    background-color: #333;
+    color: red;
+}
+
+.escuro #Temporizador {
+    background-color: #222;
+    color: #ffcc00;
+}
+
+.escuro #botaoTema {
+    background-color: #444444;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
