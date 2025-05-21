@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Idk</title>
-    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="relogio" id="relogio">
-        00:00:00
-    </div>
+<body class="claro">
+    <!-- Botão do tema -->
+    <button id="botaoTema" class="tema-botao" onclick="alternarTema()">🌙</button>
+
+    <div class="relogio" id="relogio">00:00:00</div>
+
     <section>
         <h1>Temporizador</h1>
         <input type="date" id="dataSelecionada">
@@ -20,10 +21,7 @@
         <div id="Temporizador" class="Temporizador">00d 00h 00m 00s</div>
     </section>
 
-
-
-
     <script src="script.js"></script>
 </body>
 
-</html>  
+</html>
