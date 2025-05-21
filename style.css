@@ -64,6 +64,7 @@ button {
 button:hover {
     background-color: #ff9999;
 }
+
 .tempo-braga {
     margin-top: 30px;
     padding: 20px;
@@ -84,7 +85,6 @@ button:hover {
     width: 60px;
     height: 60px;
 }
- 
 
 section {
     margin-top: 40px;
@@ -162,11 +162,8 @@ h1 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-
-
 .body-wrapper {
     font-family: 'Outfit', sans-serif;
-    background: linear-gradient(135deg, #3a3897 0%, #2c2a72 40%, #1a1a4e 100%);
 }
 
 .weather-widget::before {
@@ -250,9 +247,7 @@ h1 {
 }
 
 @keyframes gentleBob {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
 
@@ -313,4 +308,28 @@ h1 {
 
 .delay-700 {
     animation-delay: 0.7s !important;
+}
+
+/* =============== MINHAS ATUALIZAÇÕES =============== */
+
+/* Botão iniciar contagem vermelho + aura */
+#iniciarContagemBtn {
+    background-color: #ff4d4d;
+    color: #000;
+    transition: box-shadow 0.3s ease;
+}
+
+#iniciarContagemBtn:hover {
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+/* Placeholder do input de data sempre preto */
+input[type="date"]::placeholder {
+    color: #000 !important;
+}
+
+/* Força o texto preto no campo de data */
+input[type="date"] {
+    color-scheme: light;
+    color: #000 !important;
 }
