@@ -22,7 +22,7 @@
         <button onclick="iniciarContagem()">Iniciar Temporizador</button>
         <div id="Temporizador" class="Temporizador">00d 00h 00m 00s</div>
     </section>
-<div class="body-wrapper min-h-screen flex justify-center items-center p-4">
+ <div class="body-wrapper min-h-screen flex justify-center items-center p-4">
         <div class="weather-widget-container relative w-full max-w-sm sm:max-w-md">
             <div class="weather-widget relative text-white bg-gradient-to-br from-purple-700/70 via-indigo-800/60 to-blue-900/70 backdrop-blur-lg shadow-2xl rounded-3xl p-6 overflow-hidden border border-white/10">
 
@@ -67,6 +67,15 @@
                         <div id="humidity">Humidade: --%</div>
                         <div id="windSpeed">Vento: -- km/h</div>
                     </div>
+
+                    <!-- Previsão dos próximos dias (será preenchido por JS) -->
+                    <div id="forecast" class="forecast flex flex-nowrap justify-between pb-2">
+                        <!-- Previsões aparecem aqui via JS -->
+                    </div>
+
+                    <!-- CAMPO DE DATA + BOTÃO ATUALIZADO -->
+                    <div class="mt-6 text-center">
+                       
 
                     <!-- Previsão dos próximos dias (será preenchido por JS) -->
                     <div id="forecast" class="forecast flex flex-nowrap justify-between pb-2">
