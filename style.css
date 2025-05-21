@@ -1,8 +1,18 @@
 body {
     text-align: center;
     padding: 40px;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.claro {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.escuro {
+    background-color: #535252;
+    color: #ffffff;
 }
 
 .titulo {
@@ -70,4 +80,15 @@ h1 {
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
+}
+
+.tema-botao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
 }
