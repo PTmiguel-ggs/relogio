@@ -140,3 +140,6 @@ fetchWeather();
 setInterval(updateDateTime, 60000); // Atualizar hora a cada minuto
 setInterval(fetchWeather, 60000); // Atualiza a cada 1 minuto
 
+document.getElementById("botaoTopoEsquerdo").addEventListener("click", () => {
+  window.location.href = "/";
+});
